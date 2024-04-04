@@ -6,7 +6,7 @@ from PIL import Image
 face_cascade = cv2.CascadeClassifier(r"D:\Machine Learning Stuff\opencv-master\opencv-master\data\haarcascades\haarcascade_frontalface_default.xml")
 model = load_model(r"D:\vs code\python\DeepLearning\Projects\Facial_landmark_detection\facial_detection_model_2.h5")
 
-img_main = Image.open(r"D:\Datasets\facial_landmark_dataset\train\00000.png")
+img_main = Image.open(r"D:\Datasets\facial_landmark_dataset\train\00002.png")
 img_gray = img_main.convert('L')
 img = img_gray.resize((224,224))
 img_main = np.array(img_main)
